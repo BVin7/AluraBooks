@@ -1,0 +1,79 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--branco);
+
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+    margin-right: 1rem;
+}
+
+.cabecalho__menu-hamburger {
+    background-image: url("/img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: inline-block;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    margin: 0 1rem;
+}
+
+.container__imagem {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.lista-menu {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    width: 70vw;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+/*explicando o seletor acima (pra mim mesmo): 
+O combinador geral de elementos irmãos "~" (tio) seleciona elementos irmãos que compartilham de um mesmo pai, onde o elemento da direita vem depois (não necessariamente de forma imediata) do elemento da esquerda.
+
+O seletor acima vai se comportar de uma maneira parecida com uma condicional IF de JavaScript:
+- Se o elemento container__botao estiver "checked", o combinador "~" vai procurar o elemento de nome lista-menu que venha depois de container__botao para então aplicar "display: block" nele.
+*/
+
+.container__botao {
+    display: none;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1rem;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    background-clip: text;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
