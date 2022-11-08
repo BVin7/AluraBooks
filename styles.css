@@ -1,12 +1,20 @@
 @import url("styles/header.css");
 @import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
 
 :root {
     /*cores*/
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
+    --branco-rodape: #F9F9F9;
     --laranja: #EB9B00;
+    --sombra: #00000026;
+    --cinza: #858585;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul-subtitulo: #002F52;
 
     /*fontes*/
     --fonte-principal: 'Poppins', sans-serif;
@@ -18,4 +26,6 @@ body {
     font-family: var(--fonte-principal);
     font-size: 1rem;
     font-weight: 400;
+
+    line-height: 1.5rem;
 }

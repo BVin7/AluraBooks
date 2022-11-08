@@ -1,0 +1,110 @@
+.carrossel__titulo {
+    background: var(--branco);
+
+    padding: 1.5rem 0 0.5rem 0;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--laranja);
+
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.swiper-slide img {
+    width: 100%;
+
+    filter: drop-shadow(0.125rem 0.25rem 0.5rem var(--sombra) );
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+
+    margin: 0.4rem 0;
+}
+
+.card {
+    background: var(--branco);
+
+    box-shadow: 0 0.25rem 0.25rem var(--sombra);
+
+    border-radius: 0.625rem;
+
+    margin: 1rem 1.5rem;
+    padding: 1rem;
+}
+
+.card__descricao,
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+
+    color: var(--laranja);
+}
+
+.descricao__titulo-livro,
+.descricao__titulo-autora {
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    line-height: 1.6875rem;
+
+    color: var(--azul-subtitulo);
+
+    margin: 0.5rem 0;
+}
+
+.descricao__texto {
+    font-size: 0.875rem;
+
+    line-height: 1.3125rem;
+
+    padding: 0 2.5rem 0 0;
+
+    margin-bottom: 0.5rem;
+}
+
+.descricao__imagem {
+    margin-bottom: 2.5rem;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+}
+
+.botoes__item {
+    margin: 0 0.8rem;
+}
+
+.botoes__ancora {
+    background: var(--laranja);
+
+    color: var(--branco);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    padding: 0.8rem 2.2rem;
+}
+
+.descricao__nota {
+    background-image: url("/img/Estrelinhas.svg");
+    background-repeat: no-repeat;
+
+    display: inline-block;
+
+    height: 1rem;
+    width: 6rem;
+}
