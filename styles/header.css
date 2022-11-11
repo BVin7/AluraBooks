@@ -54,11 +54,11 @@
     box-shadow: 0px 0.5rem 0.5rem var(--sombra);
 }
 
-.container__botao:checked~label {
+.container__botao:checked~.cabecalho__menu {
     background: var(--azul-degrade);
 }
 
-.container__botao:checked~label>.cabecalho__menu-hamburger {
+.container__botao:checked~.cabecalho__menu>.cabecalho__menu-hamburger {
     background: var(--branco);
 }
 
@@ -92,12 +92,105 @@ O seletor acima vai se comportar de uma maneira parecida com uma condicional IF 
 }
 
 .lista-menu__link {
-    background: var(--azul-degrade);
-    background-clip: text;
-
+    color: var(--azul-lista-menu);
     text-decoration: none;
     text-transform: uppercase;
+}
 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .cabecalho {
+        height: 5rem;
+    }
+    
+    .container {
+        margin-right: 2.5rem;
+    }
+
+    .cabecalho__menu-hamburger,
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .container__titulo,
+    .container__titulo--negrito {
+        display: inline-block;
+        
+        font-family: var(--fonte-logo);
+        font-size: 1.875rem;
+        font-weight: 400;
+
+        line-height: 1.875rem;
+
+        height: 1.875rem;
+
+        padding-top: 0.3rem;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__botao:checked~.opcoes__menu {
+        background: var(--azul-degrade);
+
+        color: var(--branco);
+    }
+
+    .opcoes__botao:checked~.lista-menu  {
+        display: block;
+
+        width: 20vw;
+    }
+
+    .opcoes__item {
+        padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+
+        font-weight: 400;
+
+        color: var(--preto);
+    }
+
+    .container__imagem {
+        padding: 0.7rem 1.5rem 0rem 1.5rem;
+    }
+    
+    .logo {
+        margin-left: 5rem;
+
+        padding: 0rem;
+    }
+
+    .lista-menu {
+        top: 75%;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        color: var(--branco);
+    }
 }

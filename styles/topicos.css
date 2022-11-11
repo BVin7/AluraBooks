@@ -49,3 +49,49 @@
 
     padding: 1rem 1.5rem;
 }
+
+@media screen and (min-width:1024px) {
+    .topicos {
+        padding: 0;
+    }
+
+    .topicos__caixa {
+        padding: 0.7rem 5rem;
+    }
+
+    .topicos__titulo {
+        font-weight: 300;
+        font-size: 1.5rem;
+
+        line-height: 2.25rem;
+
+        margin: 1.5rem 0;
+    }
+
+    .topicos__lista {
+        margin: 2rem 0 0.5rem 0;
+    }
+
+    .topicos__link  {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+
+        padding: 1.5rem 2rem;
+    }
+
+    .topicos__item {
+        margin: 2.3rem 0.7rem;
+    }
+
+    .topicos__item__android {
+        order: -2;
+    }
+
+    .topicos__item__OO {
+        order: -1;
+    }
+
+    .topicos__item__python {
+        order: 8;
+    }
+}

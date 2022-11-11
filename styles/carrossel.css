@@ -2,7 +2,7 @@
     background: var(--branco);
 
     padding: 1.5rem 0 0.5rem 0;
-    
+
     text-align: center;
     text-transform: uppercase;
 
@@ -15,7 +15,7 @@
 .swiper-slide img {
     width: 100%;
 
-    filter: drop-shadow(0.125rem 0.25rem 0.5rem var(--sombra) );
+    filter: drop-shadow(0.125rem 0.25rem 0.5rem var(--sombra));
 }
 
 .swiper-button-prev,
@@ -27,6 +27,10 @@
     position: initial;
 
     margin: 0.4rem 0;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--azul-degrade);
 }
 
 .card {
@@ -107,4 +111,90 @@
 
     height: 1rem;
     width: 6rem;
+}
+
+@media screen and (min-width:1024px) {
+    .carrossel__titulo {
+        padding: 3.5rem 0 1rem 0;
+
+        font-size: 1.625rem;
+
+        line-height: 2.4375rem;
+    }
+
+    .swiper {
+        margin: 0 8rem;
+    }
+
+    .swiper-pagination {    
+        margin: 1.5rem 0 5rem 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,0.75rem));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,0.75rem));
+    }
+
+    .swiper-slide img {
+        width: 80%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+
+        background: var(--azul-degrade);
+
+        box-shadow: 0 0.25rem 0.25rem var(--sombra);
+
+        height: 1.5rem;
+
+        top: 60%;
+
+        padding: 0.8rem;
+
+        border-radius: 2rem;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        color: var(--branco);
+
+        font-size: 0.9rem;
+        font-weight: 700;
+
+        padding-left: 0.6rem;
+    }
+
+    .swiper-button-prev:after {
+        padding-left: 0.5rem;
+    }
+
+    .card {
+        margin: 5rem auto 3rem auto;
+
+        width: 50%;
+    }
+
+    .descricao__texto {
+        font-size: 1rem;
+    
+        line-height: 1.5rem;
+    }
+
+    .descricao__imagem {
+        margin-bottom: 1rem;
+    }
+
+    .botoes__item {
+        margin: 0 1.5rem 0 0;
+    }
 }

@@ -54,3 +54,37 @@
     font-weight: 400;
     font-size: 1rem;
 }
+
+@media screen and (min-width:1024px) {
+    .contato  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        padding: 2rem 7rem;
+    }
+
+    .contato__primeira-coluna {
+        padding: 0 2rem;
+    }
+    
+    .contato__titulo {
+        font-size: 1.5rem;
+
+        line-height: 2.25rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .contato__segunda-coluna {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__email {
+        padding: 0.9rem;
+    
+        width: 80%;
+        height: 30%;
+    }
+}
