@@ -50,7 +50,7 @@
     padding: 1rem 1.5rem;
 }
 
-@media screen and (min-width:1024px) {
+@media (width >= 1024px) {
     .topicos {
         padding: 0;
     }
@@ -79,6 +79,16 @@
         padding: 1.5rem 2rem;
     }
 
+    .topicos__link:hover {
+        background-color: var(--branco);
+
+        color: var(--azul-lista-menu);
+    }
+
+    .topicos__link:active {
+        color: var(--laranja);
+    }
+
     .topicos__item {
         margin: 2.3rem 0.7rem;
     }
@@ -93,5 +103,23 @@
 
     .topicos__item__python {
         order: 8;
+    }
+}
+
+@media (width >= 1728px) {
+    .topicos__caixa {
+        padding: 1.5rem 25vw;
+    }
+
+    .topicos__titulo {
+        font-size: 2rem;
+
+        line-height: 3rem;
+
+        margin: 2rem 0;
+    }
+
+    .topicos__lista {
+        margin: 2rem 0 ;
     }
 }

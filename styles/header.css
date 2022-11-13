@@ -105,7 +105,11 @@ O seletor acima vai se comportar de uma maneira parecida com uma condicional IF 
     display: none;
 }
 
-@media screen and (min-width:1024px) {
+.container__texto {
+    display: none;
+}
+
+@media (width >= 1024px) {
     .cabecalho {
         height: 5rem;
     }
@@ -172,6 +176,10 @@ O seletor acima vai se comportar de uma maneira parecida com uma condicional IF 
         color: var(--preto);
     }
 
+    .opcoes__link:hover {
+        color: var(--laranja);
+    }
+
     .container__imagem {
         padding: 0.7rem 1.5rem 0rem 1.5rem;
     }
@@ -192,5 +200,46 @@ O seletor acima vai se comportar de uma maneira parecida com uma condicional IF 
 
     .lista-menu__item:hover>.lista-menu__link {
         color: var(--branco);
+    }
+}
+
+@media (width >= 1728px) {
+    .opcoes__botao:checked~.lista-menu  {
+        width: 11vw;
+    }
+    
+    .logo {
+        margin-left: 4rem;
+    }
+    
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+
+        text-decoration: none;
+
+        font-size: 1.25rem;
+
+        line-height: 1.875rem;
+
+        color: var(--preto);
+
+        margin-right: 2rem;
+    }
+    
+    .container__link:hover {
+        color: var(--laranja);
+    }
+
+    .container__imagem {
+        padding: 0 0;
+    }
+
+    .container__texto {
+        display: block;
     }
 }
