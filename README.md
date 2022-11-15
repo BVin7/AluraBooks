@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="/home/bvin7/Documents/Projects/AluraBooks/img/Logo.svg">
+    <img src="img/Logo.svg">
     <p><strong>AluraBooks</strong></p>
 </h1>
 
@@ -18,30 +18,30 @@ Projeto resultado do curso **[HTML e CSS: responsividade com mobile-first](https
 ### 🖥️ AluraBooks com largura >= 1728px
 ---------------------------------------
 
-![1728px](../readme-img/1728px(1).png)
-![1728px](../readme-img/1728px(1-categorias).png)
-![1728px](../readme-img/1728px(2).png)
-![1728px](../readme-img/1728px(3).png)
-![1728px](../readme-img/1728px(4).png)
+![1728px](readme-img/1728px(1).png)
+![1728px](readme-img/1728px(1-categorias).png)
+![1728px](readme-img/1728px(2).png)
+![1728px](readme-img/1728px(3).png)
+![1728px](readme-img/1728px(4).png)
 
 
 
 ### 💻 AluraBooks com largura >= 1024px
 -------------------------------------
 
-![1024px](../readme-img/1024px(1).png)
-![1024px-categorias](../readme-img/1024px(1-categorias).png)
-![1024px](../readme-img/1024px(2).png)
-![1024px](../readme-img/1024px(3).png)
-![1024px](../readme-img/1024px(4).png)
-![1024px](../readme-img/1024px(5).png)
+![1024px](readme-img/1024px(1).png)
+![1024px-categorias](readme-img/1024px(1-categorias).png)
+![1024px](readme-img/1024px(2).png)
+![1024px](readme-img/1024px(3).png)
+![1024px](readme-img/1024px(4).png)
+![1024px](readme-img/1024px(5).png)
 
 
 
 ### 📱 AluraBooks com largura >= 428px
 ------------------------------------
 
-![428px](../readme-img/428px(1).png)
-![428px](../readme-img/428px(1-menu-hamburger).png)
-![428px](../readme-img/428px(2).png)
-![428px](../readme-img/428px(3).png)
+![428px](readme-img/428px(1).png)
+![428px](readme-img/428px(1-menu-hamburger).png)
+![428px](readme-img/428px(2).png)
+![428px](readme-img/428px(3).png)
